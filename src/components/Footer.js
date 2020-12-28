@@ -5,7 +5,7 @@ export default class Footer extends React.Component {
     return (
       <div className="footer">
         <p>
-          copy right 2020 , <span className="real-name">thana wisutphusi</span>
+          Copyright &copy; 2020 , <span className="real-name">thana wisutphusi</span>
         </p>
       </div>
     );
