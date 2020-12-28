@@ -1,0 +1,55 @@
+.real-name {
+  color: $pink-color;
+}
+#landing-page {
+  background-color: rgb(240, 233, 218);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+#landing-page h1 {
+  margin-bottom: $medium-size;
+  font-size: 4em;
+}
+#landing-page h2 {
+  margin-bottom: $medium-size;
+  font-size: 3em;
+}
+#landing-page button {
+  background-color: $cream-color;
+  padding: $medium-size;
+  border: 5px solid $pink-color;
+  color: $pink-color;
+  font-size: $medium-size;
+  font-weight: bold;
+  transition: background-color 0.5s ease-out;
+  transition: rotate 0.4s ease;
+}
+
+#arrow-down {
+  display: none;
+}
+
+#landing-page button:hover {
+  background-color: $pink-color;
+  text-decoration: underline;
+  color: $cream-color;
+  transition: background-color 0.5s ease-in;
+}
+#landing-page button:hover #arrow-down {
+  display: inline-block;
+}
+#landing-page button:hover #arrow-right {
+  display: none;
+}
+
+#landing-page i {
+  margin-left: $small-size;
+}
