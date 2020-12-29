@@ -3,6 +3,7 @@ import Project from "../components/Project";
 import ProjectFilters from "../components/ProjectFilters";
 
 const stacks = [
+  "all",
   "node.js",
   "react",
   "express",

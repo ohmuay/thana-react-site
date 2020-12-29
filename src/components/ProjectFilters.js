@@ -12,6 +12,9 @@ export default class ProjectFilters extends React.Component {
             <button
               key={stack}
               onClick={(e) => {
+                if (stack == "all") {
+                  return this.props.setSelectedStack("");
+                }
                 this.props.setSelectedStack(stack);
               }}
             >
