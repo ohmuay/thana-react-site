@@ -4,7 +4,7 @@ import profile from "../statics/profile.jpg";
 export default class AboutPage extends React.Component {
   render() {
     return (
-      <section>
+      <section id="about-section">
         <div className="container">
           <div id="about-page">
             <h1>About</h1>
@@ -16,7 +16,7 @@ export default class AboutPage extends React.Component {
             </div>
             <div className="col">
               <div id="info">
-                <img id="profile" src={profile} alt="profile" srcset="" />
+                <img id="profile" src={profile} alt="profile"/>
                 <p id="text-info">more info about this guy</p>
               </div>
               <div id="skills">
