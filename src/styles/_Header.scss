@@ -1,20 +1,40 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  background-color: lightpink;
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
-.nav-bar {
+.navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  background-color: lighten($pink-color, 20);
 }
 
 .nav-link {
-  display: inline-block;
-  background-color: lightcoral;
-  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  padding: $small-size;
+  font-size: $medium-size;
+  color: $cream-color;
+  background-color: $pink-color;
+}
+.nav-item:hover{
+  text-decoration: underline;
+}
+
+.nav-button{
+  color:$cream-color;
+  text-decoration: none;
 }
 
 .nav-brand {
-  background-color: coral;
+  padding: $small-size;
+  font-size: $medium-size;
+  color: $cream-color;
+  background-color: $pink-color;
+}
+i {
+  margin: $small-size;
 }

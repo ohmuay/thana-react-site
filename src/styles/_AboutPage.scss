@@ -1,3 +1,30 @@
-.about-page{
-    background:lightblue
+#about-page {
+  height: 100%;
+}
+
+#about-page i {
+  font-size: $extra-large-size;
+  padding: $large-size;
+}
+
+.character {
+  margin: 1%;
+  background-color: lightpink;
+}
+.hexagon {
+  background-color: rgb(250, 121, 141);
+}
+
+#profile {
+  max-height: 500px;
+}
+#info {
+  width: 100%;
+  text-align: right;
+  margin-right: $extra-large-size;
+}
+#skills {
+  width: 100%;
+  text-align: left;
+  margin-left: $extra-large-size;
 }

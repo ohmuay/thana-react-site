@@ -1,6 +1,7 @@
 .real-name {
   color: $pink-color;
 }
+
 #landing-page {
   background-color: rgb(240, 233, 218);
   height: 100%;
@@ -8,12 +9,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 .ball {
   position: absolute;
   border-radius: 100%;
   opacity: 0.7;
 }
+
 #landing-page h1 {
   margin-bottom: $medium-size;
   font-size: 4em;
@@ -43,11 +46,11 @@
   color: $cream-color;
   transition: background-color 0.5s ease-in;
 }
-#landing-page button:hover #arrow-down {
-  display: inline-block;
-}
 #landing-page button:hover #arrow-right {
   display: none;
+}
+#landing-page button:hover #arrow-down {
+  display: inline;
 }
 
 #landing-page i {

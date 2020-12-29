@@ -2,10 +2,13 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import "../components/Balls";
+import Balls from "../components/Balls";
 library.add(fas);
 
 export default class LandingPage extends React.Component {
+  componentDidMount() {
+    Balls();
+  }
   render() {
     return (
       <section>

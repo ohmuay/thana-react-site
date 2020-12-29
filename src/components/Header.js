@@ -1,4 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);
 
 export default class Header extends React.Component {
   componentDidMount() {
@@ -22,16 +26,39 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <div id="navbar" className="header">
-        <div className="nav-bar">
-          <p className="nav-link nav-brand">LOGO</p>
+      <div id="navbar" className="nav navbar">
+        <div className="nav">
+          <p className="nav-brand">
+            Meteor
+            <i>
+              <FontAwesomeIcon icon={["fas", "meteor"]} />
+            </i>
+          </p>
         </div>
-        <nav className="nav-bar">
-          <p className="nav-link nav">home</p>
-          <p className="nav-link nav">projects</p>
-          <p className="nav-link nav">about</p>
-          <p className="nav-link nav">contact</p>
-        </nav>
+        <div className="nav">
+          <ul className="nav-link">
+            <li className="nav-item">
+              <a href="#landing-page" className="nav-button">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+            <a href="#about-page" className="nav-button">
+            About
+            </a>
+            </li>
+            <li className="nav-item">
+              <a href="#projects-page" className="nav-button">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#" className="nav-button">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     );
   }
