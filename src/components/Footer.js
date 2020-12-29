@@ -3,9 +3,10 @@ import React from "react";
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className="footer">
+      <div id="footer">
         <p>
-          Copyright &copy; 2020 , <span className="real-name">thana wisutphusi</span>
+          Copyright &copy; 2020 ,{" "}
+          <span className="real-name">thana wisutphusi</span>
         </p>
       </div>
     );

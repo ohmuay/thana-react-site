@@ -5,9 +5,9 @@ export default class AboutPage extends React.Component {
   render() {
     return (
       <section id="about-section">
-        <div className="container">
+        <div className="container content">
           <div id="about-page">
-            <h1>About</h1>
+            <p className="topic">About</p>
             <div className="row">
               <Characteristic />
               <Characteristic />
@@ -16,7 +16,7 @@ export default class AboutPage extends React.Component {
             </div>
             <div className="col">
               <div id="info">
-                <img id="profile" src={profile} alt="profile"/>
+                <img id="profile" src={profile} alt="profile" />
                 <p id="text-info">more info about this guy</p>
               </div>
               <div id="skills">

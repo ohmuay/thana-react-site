@@ -62,7 +62,7 @@ export default class Projects extends React.Component {
   render() {
     return (
       <section>
-        <div id="projects-page">
+        <div id="projects-page" className="container content">
           <h1>My Projects</h1>
           <ProjectFilters
             stacks={stacks}

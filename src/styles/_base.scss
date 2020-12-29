@@ -6,12 +6,9 @@
 }
 section {
   height: 100vh;
+  overflow: hidden;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 .container {
   margin: 0 12.2% 0 12.2%;
   text-align: center;
@@ -25,4 +22,12 @@ section {
 .col {
   display: flex;
   // justify-content:center
+}
+.topic {
+  font-size: $extra-large-size;
+  font-weight: 300;
+  font-style: italic;
+  color: #333;
+  text-decoration: underline 3px solid #333;
+  text-underline-offset: $small-size;
 }

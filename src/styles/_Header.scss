@@ -3,10 +3,23 @@ li {
   list-style: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
 .navbar {
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
-  background-color: lighten($pink-color, 20);
+  background-color: #333;
+  border-bottom: 4px solid $pink-color;
 }
 
 .nav-link {
@@ -17,23 +30,23 @@ li {
 .nav-item {
   padding: $small-size;
   font-size: $medium-size;
-  color: $cream-color;
-  background-color: $pink-color;
-}
-.nav-item:hover{
-  text-decoration: underline;
+  background-color: #333;
 }
 
-.nav-button{
-  color:$cream-color;
+.nav-button {
   text-decoration: none;
+  color: $cream-color;
+}
+.nav-button:hover {
+  text-decoration: underline;
+  color: $pink-color;
 }
 
 .nav-brand {
   padding: $small-size;
   font-size: $medium-size;
   color: $cream-color;
-  background-color: $pink-color;
+  background-color: #333;
 }
 i {
   margin: $small-size;
