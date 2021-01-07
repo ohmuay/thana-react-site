@@ -1,3 +1,38 @@
 .projects-page {
   background: lightcoral;
 }
+
+.project{
+  border: 1px solid blue;
+}
+
+.project__title{
+  font-size: $large-size;
+  font-weight: bold;
+  color: $pink-color;
+}
+
+.project__link{
+  font-size: $medium-size;
+
+}
+
+.project__stacks{
+  display:flex;
+  justify-content: center;
+}
+
+.project__stack{
+  margin-right: $small-size;
+}
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+.button__filter {
+  border:none;
+  min-width: 80px;
+  background: aqua;
+  padding: $small-size;
+  margin-right: $small-size;
+}
